@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 *{
     width: 0;
     height: 0;
@@ -8,13 +10,19 @@ body{
     background-color: rgb(241, 135, 116);
 }
 
+h1{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+    margin-left: 650px;
+}
+
 div.head{
     position: relative;
     padding: 10px;
     background-color: yellow;
-    width: 520px;
-    height: 520px;
-    margin: 100px  500px 50px 400px;
+    width: 420px;
+    height: 420px;
+    margin: 100px  500px 50px 470px;
     border-radius: 50%;
     border: 5px solid rgb(248, 128, 107);
     box-shadow: 2px 3px 5px tomato;
@@ -22,10 +30,10 @@ div.head{
 
 .heart-eyeRight{
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     background-color: red;
-    margin: 150px 90px;
+    margin: 150px 80px;
     transform: rotate(-45deg);
     animation-name: beat;
     animation-duration: 2s;
@@ -34,10 +42,10 @@ div.head{
 
 .heart-eyeLeft{
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     background-color: red;
-    margin: -250px 330px;
+    margin: -220px 265px;
     transform: rotate(-45deg);
     animation-name: beat;
     animation-duration: 2s;
@@ -48,8 +56,8 @@ div.head{
     content: "";
     background-color: red;
     border-radius: 50%;
-    height: 99px;
-    width: 99px;
+    height: 70px;
+    width: 70px;
     position: absolute;
 }
 
@@ -73,11 +81,11 @@ div.head{
 
 @keyframes beat {
     from {
-        transform: scale(2, 2, 2) rotate(-45deg);
+        transform: scale(1, 1, 1) rotate(-45deg);
     }
 
     50%{
-transform: scale3d(1.40, 1.19, 1.50) rotate(-45deg);
+transform: scale3d(1.20, 1.19, 1.30) rotate(-45deg);
     }
 
     to {
@@ -88,8 +96,8 @@ transform: scale3d(1.40, 1.19, 1.50) rotate(-45deg);
 .lips{
     position: relative;
     background-color: rgb(71, 21, 5);
-    width: 200px;
-    height: 160px;
-    margin: 300px 160px;
+    width: 150px;
+    height: 100px;
+    margin: 290px 140px;
     border-radius: 50%;
 }
