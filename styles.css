@@ -4,46 +4,92 @@
     border: 0;
 }
 
-.heart{
+body{
+    background-color: rgb(241, 135, 116);
+}
+
+div.head{
     position: relative;
-    width: 200px;
-    height: 200px;
+    padding: 10px;
+    background-color: yellow;
+    width: 520px;
+    height: 520px;
+    margin: 100px  500px 50px 400px;
+    border-radius: 50%;
+    border: 5px solid rgb(248, 128, 107);
+    box-shadow: 2px 3px 5px tomato;
+}
+
+.heart-eyeRight{
+    position: relative;
+    width: 100px;
+    height: 100px;
     background-color: red;
-    margin: 150px;
+    margin: 150px 90px;
     transform: rotate(-45deg);
     animation-name: beat;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
-.heart:before, .heart:after{
+.heart-eyeLeft{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: -250px 330px;
+    transform: rotate(-45deg);
+    animation-name: beat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.heart-eyeRight:before, .heart-eyeRight:after,
+.heart-eyeLeft:before, .heart-eyeLeft:after{
     content: "";
     background-color: red;
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 99px;
+    width: 99px;
     position: absolute;
 }
 
-.heart:before{
-    right: -90px;
+.heart-eyeRight:before{
+    right: -40px;
     top: 1px;
 }
 
-.heart:after{
-    top: -100px;
+.heart-eyeRight:after{
+    top: -40px;
+}
+
+.heart-eyeLeft:before{
+    right: -40px;
+    top: 1px;
+}
+
+.heart-eyeLeft:after{
+    top: -40px;
 }
 
 @keyframes beat {
     from {
-        transform: scale(1, 1, 1) rotate(-45deg);
+        transform: scale(2, 2, 2) rotate(-45deg);
     }
 
     50%{
-transform: scale3d(1.30, 1.19, 1.30) rotate(-45deg);
+transform: scale3d(1.40, 1.19, 1.50) rotate(-45deg);
     }
 
     to {
         transform: scale(1, 1, 1) rotate(-45deg);
     }
+}
+
+.lips{
+    position: relative;
+    background-color: rgb(71, 21, 5);
+    width: 200px;
+    height: 160px;
+    margin: 300px 160px;
+    border-radius: 50%;
 }
